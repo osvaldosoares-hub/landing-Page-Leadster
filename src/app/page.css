@@ -1,0 +1,39 @@
+.container{
+    height: 60vh;
+    background-color: rgb(222, 252, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section{
+    text-align: center;
+}
+.section button{
+    border-radius: 15px 15px 15px 0;
+    padding: 6px 15px;
+    background-color: transparent;
+    font-weight: 700;
+    color: #1E90FF;
+    border:2px solid #1E90FF;
+}
+.section h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.section h1{
+    font-size:70px;
+    font-weight: 700;
+    color: #1E90FF;
+}
+.section img{
+    position: absolute;
+    top: 262px;
+    right: 390px;
+}
+.section .borda{
+    border: 0.1px solid gray;
+    width: 105%;
+}
+.section p{
+    margin: 5px 0 0 2em;
+}
