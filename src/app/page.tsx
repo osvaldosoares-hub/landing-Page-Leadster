@@ -1,7 +1,11 @@
+import { VideosContainer } from '@/components/Main'
 import './page.css'
 
+
 export default function Home() {
+
   return (
+    <>
     <div className="container">
       <div className="section">
           <button>WEBINARS EXCLUSIVO</button>
@@ -12,5 +16,7 @@ export default function Home() {
           <p>Conheça as estratégias que mudaram o jogo e como aplica-las no seu negócio</p>
       </div>
     </div>
+    <VideosContainer/>
+    </>
   )
 }

@@ -1,0 +1,81 @@
+.ContainerMain{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    background-color: rgb(245, 245, 245);
+
+}
+.Main{
+    width: 60%;
+}
+.HeaderMain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+    margin-top: 3em;
+    border-bottom: 1px solid gray;
+}
+.HeaderMain .ButtonsHeader{
+    display: flex;
+    
+    
+}
+.ButtonsHeader button{
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 10px;
+    margin-right: 2em;
+}
+.ButtonsHeader button:hover{
+    color: #1E90FF;
+    border:1px solid #1E90FF;
+}
+.BodyMain{
+    width: 100%;
+    margin-top: 2em;
+    
+}
+.MainCards{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.cards{
+    margin-top: 1em;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(251, 253, 255);
+    height: 200px;
+}
+.cards img{
+    width: 240px;
+}
+.cards p{
+    margin-left: 0.5em;
+    font-size: 14px;
+    width: 230px;
+}
+.cards:hover{
+    
+    color: #1E90FF;
+}
+.hoverImg{
+    display: block;
+    width: 240px;
+    height: 135px;
+   border-radius: 15px 15px 0 0 ;
+    position: absolute;
+}
+.cards:hover .hoverImg{
+    background-color: #1E90FF42;
+    background-image: url('../../../public/img/play.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
