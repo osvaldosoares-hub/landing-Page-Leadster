@@ -13,16 +13,29 @@ export const VideosContainer=()=>{
     //console.log(videos)
     const [ButtonSelect, setButtonSelect] = useState('Agência');
     const [arrayVideo] = useState(videos);
-    const [Select, setSelect] = useState(false)
     const [arrayFilter, setArrayFilter] = useState<arrayVideo[]>([]);
-
+    
     const OrdernarVideos= (tipo:string)=>{
         setButtonSelect(tipo)
         setArrayFilter(arrayVideo.filter(values=> values.type === tipo))
-        setSelect(true)
     }
+    useEffect(()=>{
+        console.log('oi')
+        setArrayFilter(arrayVideo)
+        Pages(9)
+    },[arrayVideo])
+    const Pages = (number:number)=>{
+        console.log('ola')
+        
+        console.log(number)
+        setArrayFilter(arrayVideo.slice(number-9,number))
+        
     
-    //console.log(arrayFilter)
+        setButtonSelect('')
+    }
+   
+    let number= 0
+    
     return (
         <div className="ContainerMain">
             <div className="Main">
@@ -67,21 +80,35 @@ export const VideosContainer=()=>{
                 </div>
                 <div className="BodyMain">
                         <div className='MainCards'>
-                        {Select?<>{arrayFilter?.map(values =>(
+                            {arrayFilter?.map(values =>(
                                 <div key={values.id} className='cards'>
                                     <div className='hoverImg'></div>
                                     <img src='../../img/thumbnail.png' alt=''/>
                                     <p>{values.nome}</p>
                                 </div>
-                            ))} </>: <>
+
+                            ))}
+                           
+
+                        </div>
+                        <div className='Pages'>
+                                {arrayVideo.map((values, i)=>{
+                                    
+                                    if(i%9===0){
+                                        number++;
+                                        if(i===0){
+                                            return (<button onClick={()=>Pages(9)}>Page inicial</button>)
+                                        }
+                                        /*if()*/
+                                        return (<button  onClick={()=> Pages(i+9)}>{number - 1}</button>)
+                                    }
+                                  
+                                    
+                                })}
+                                
+
                             
-                            {arrayVideo?.map(values =>(
-                                <div key={values.id} className='cards'>
-                                    <div className='hoverImg'></div>
-                                    <img src='../../img/thumbnail.png' alt=''/>
-                                    <p>{values.nome}</p>
-                                </div>
-                            ))} </>}
+                         
                         </div>
 
                 </div>
