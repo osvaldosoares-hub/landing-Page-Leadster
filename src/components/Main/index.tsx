@@ -12,6 +12,7 @@ interface arrayVideo{
 export const VideosContainer=()=>{
     //console.log(videos)
     const [ButtonSelect, setButtonSelect] = useState('Agência');
+    const [ButtonPageSelect, setButtonPageSelect] = useState(9);
     const [arrayVideo] = useState(videos);
     const [arrayFilter, setArrayFilter] = useState<arrayVideo[]>([]);
     
@@ -27,7 +28,7 @@ export const VideosContainer=()=>{
     const Pages = (number:number)=>{
         console.log('ola')
         
-        console.log(number)
+        setButtonPageSelect(number)
         setArrayFilter(arrayVideo.slice(number-9,number))
         
     
@@ -97,10 +98,18 @@ export const VideosContainer=()=>{
                                     if(i%9===0){
                                         number++;
                                         if(i===0){
-                                            return (<button onClick={()=>Pages(9)}>Page inicial</button>)
+                                            return (<button onClick={()=>Pages(9)} style={{
+                                                backgroundColor: ButtonPageSelect === 9 ? '#1E90FF' : '',
+                                                border: ButtonPageSelect === 9 ? '1px solid #1E90FF' : '',
+                                                color: ButtonPageSelect === 9 ? 'white' : ''
+                                            }}>Page inicial</button>)
                                         }
                                         /*if()*/
-                                        return (<button  onClick={()=> Pages(i+9)}>{number - 1}</button>)
+                                        return (<button  onClick={()=> Pages(i+9)} style={{
+                                            backgroundColor: ButtonPageSelect === i+9 ? '#1E90FF' : '',
+                                            border: ButtonPageSelect === i+9 ? '1px solid #1E90FF' : '',
+                                            color: ButtonPageSelect === i+9 ? 'white' : ''
+                                        }}>{number - 1}</button>)
                                     }
                                   
                                     
