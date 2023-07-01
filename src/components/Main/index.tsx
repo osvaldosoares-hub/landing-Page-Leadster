@@ -9,31 +9,57 @@ interface arrayVideo{
     url:string;
     type:string
 }
+
 export const VideosContainer=()=>{
     //console.log(videos)
-    const [ButtonSelect, setButtonSelect] = useState('Agência');
+    const [ButtonSelect, setButtonSelect] = useState('');
     const [ButtonPageSelect, setButtonPageSelect] = useState(9);
-    const [arrayVideo] = useState(videos);
+    const [ordenarPor, setOrdenarPor] = useState(false)
+    const OrdernarVideosData= ()=>{
+        const VideosData = [...videos].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+        return VideosData
+    }
+    const [arrayVideo] = useState(OrdernarVideosData);
     const [arrayFilter, setArrayFilter] = useState<arrayVideo[]>([]);
+    const [arrayPages, setArrayPages] = useState<arrayVideo[]>([]);
+
+    useEffect(()=>{
+        
+        setArrayFilter(arrayVideo)
+        setArrayPages(arrayVideo)
+        Pages(9,arrayVideo)
+    },[arrayVideo,ordenarPor])
+    
+    
+   
     
     const OrdernarVideos= (tipo:string)=>{
+
+        if(tipo !== ''){
         setButtonSelect(tipo)
-        setArrayFilter(arrayVideo.filter(values=> values.type === tipo))
+        const filteredVideos = arrayVideo.filter(values => values.type === tipo);
+        
+        setArrayFilter(filteredVideos)
+        setArrayPages(filteredVideos)
+        Pages(9,filteredVideos)
+        }
+        else{
+           
+            setButtonSelect('')
+            setArrayFilter(arrayVideo)
+            setArrayPages(arrayVideo)
+            Pages(9,arrayVideo)
+        }
     }
-    useEffect(()=>{
-        console.log('oi')
-        setArrayFilter(arrayVideo)
-        Pages(9)
-    },[arrayVideo])
-    const Pages = (number:number)=>{
-        console.log('ola')
-        
-        setButtonPageSelect(number)
-        setArrayFilter(arrayVideo.slice(number-9,number))
-        
     
-        setButtonSelect('')
+    const Pages = (number:number,videosFilter: arrayVideo[])=>{
+       
+        //console.log(videos)
+        setButtonPageSelect(number)
+        setArrayFilter(videosFilter.slice(number-9,number))
+        
     }
+  
    
     let number= 0
     
@@ -42,6 +68,13 @@ export const VideosContainer=()=>{
             <div className="Main">
                 <div className="HeaderMain">
                     <div className='ButtonsHeader'>
+                    <button onClick={()=> OrdernarVideos('')} 
+                    style={{
+                        backgroundColor: ButtonSelect === '' ? '#1E90FF' : '',
+                        border: ButtonSelect === '' ? '1px solid #1E90FF' : '',
+                        color: ButtonSelect === '' ? 'white' : ''
+                    }}
+                        >Todos videos</button>
                     <button onClick={()=> OrdernarVideos('Agência')} 
                     style={{
                         backgroundColor: ButtonSelect === 'Agência' ? '#1E90FF' : '',
@@ -75,8 +108,13 @@ export const VideosContainer=()=>{
                     <div>
                         <p>
                             ordenar por:
+                           
                         </p>
-
+                        <select>
+                                <option value="true">Data Publicação</option>
+                              
+                                
+                        </select>
                     </div>
                 </div>
                 <div className="BodyMain">
@@ -93,19 +131,19 @@ export const VideosContainer=()=>{
 
                         </div>
                         <div className='Pages'>
-                                {arrayVideo.map((values, i)=>{
+                                {arrayPages.map((values, i)=>{
                                     
                                     if(i%9===0){
                                         number++;
                                         if(i===0){
-                                            return (<button onClick={()=>Pages(9)} style={{
+                                            return (<button onClick={()=>Pages(9,arrayPages)} style={{
                                                 backgroundColor: ButtonPageSelect === 9 ? '#1E90FF' : '',
                                                 border: ButtonPageSelect === 9 ? '1px solid #1E90FF' : '',
                                                 color: ButtonPageSelect === 9 ? 'white' : ''
                                             }}>Page inicial</button>)
                                         }
                                         /*if()*/
-                                        return (<button  onClick={()=> Pages(i+9)} style={{
+                                        return (<button  onClick={()=> Pages(i+9,arrayPages)} style={{
                                             backgroundColor: ButtonPageSelect === i+9 ? '#1E90FF' : '',
                                             border: ButtonPageSelect === i+9 ? '1px solid #1E90FF' : '',
                                             color: ButtonPageSelect === i+9 ? 'white' : ''
