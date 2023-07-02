@@ -2,10 +2,13 @@
 import { useEffect, useState } from 'react'
 import './style.css'
 import { videos } from '../../../videos'
+import { ModalVideo } from '../ModalVideo';
 interface arrayVideo{
     id:number;
     nome:string;
     thumb:string;
+    description:string;
+    date:string;
     url:string;
     type:string
 }
@@ -15,6 +18,8 @@ export const VideosContainer=()=>{
     const [ButtonSelect, setButtonSelect] = useState('');
     const [ButtonPageSelect, setButtonPageSelect] = useState(9);
     const [ordenarPor, setOrdenarPor] = useState(false)
+    const [ModalOpen, setModalOpen] = useState(false)
+    const [Card, setCard] = useState<arrayVideo>()
     const OrdernarVideosData= ()=>{
         const VideosData = [...videos].sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
         return VideosData
@@ -59,8 +64,12 @@ export const VideosContainer=()=>{
         setArrayFilter(videosFilter.slice(number-9,number))
         
     }
-  
-   
+    const ModalCards = (values:arrayVideo)=>{
+        console.log(values)
+        setModalOpen(true)
+        setCard(values)
+    }
+    
     let number= 0
     
     return (
@@ -120,7 +129,7 @@ export const VideosContainer=()=>{
                 <div className="BodyMain">
                         <div className='MainCards'>
                             {arrayFilter?.map(values =>(
-                                <div key={values.id} className='cards'>
+                                <div key={values.id} className='cards' onClick={()=>ModalCards(values)}>
                                     <div className='hoverImg'></div>
                                     <img src='../../img/thumbnail.png' alt=''/>
                                     <p>{values.nome}</p>
@@ -137,16 +146,16 @@ export const VideosContainer=()=>{
                                         number++;
                                         if(i===0){
                                             return (<button onClick={()=>Pages(9,arrayPages)} style={{
-                                                backgroundColor: ButtonPageSelect === 9 ? '#1E90FF' : '',
+                                                
                                                 border: ButtonPageSelect === 9 ? '1px solid #1E90FF' : '',
-                                                color: ButtonPageSelect === 9 ? 'white' : ''
+                                                color: ButtonPageSelect === 9 ? '#1E90FF' : ''
                                             }}>Page inicial</button>)
                                         }
                                         /*if()*/
                                         return (<button  onClick={()=> Pages(i+9,arrayPages)} style={{
-                                            backgroundColor: ButtonPageSelect === i+9 ? '#1E90FF' : '',
+                                            
                                             border: ButtonPageSelect === i+9 ? '1px solid #1E90FF' : '',
-                                            color: ButtonPageSelect === i+9 ? 'white' : ''
+                                            color: ButtonPageSelect === i+9 ? '#1E90FF' : ''
                                         }}>{number - 1}</button>)
                                     }
                                   
@@ -161,6 +170,9 @@ export const VideosContainer=()=>{
                 </div>
                
             </div>
+            {ModalOpen ? 
+                <ModalVideo Card={Card} setModalOpen={setModalOpen}/>
+            :<></>}
         </div>
     )
 }

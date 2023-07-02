@@ -1,26 +1,29 @@
 export const videos= [
     {
         id:1,
-        nome:'como aumentar sua Geração de leads feat',
-        url:'',
+        nome:'given',
+        url:'https://www.youtube.com/watch?v=-9DDpOaMlbU&list=RD-9DDpOaMlbU&start_radio=1',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'
 
     },
     {
         id:2,
-        nome:'como aumentar sua Geração de leads feat. Traktor',
-        url:'',
+        nome:'Bruno mars',
+        url:'https://www.youtube.com/watch?v=GG7fLOmlhYg&list=RD-9DDpOaMlbU&index=2',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'ChatBot',   
-        date: '2023-06-31'
+        date: '2023-01-01'
     },
     {
         id:3,
         nome:'Sla mano',
-        url:'',
+        url:'https://youtu.be/0zl72thBKzo',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'ChatBot',   
         date: '2023-05-20'
     },
@@ -29,6 +32,7 @@ export const videos= [
         nome:'segundo',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'ChatBot',  
         date: '2023-04-30' 
     },
@@ -37,6 +41,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Marketing',  
         date: '2023-06-13' 
     },
@@ -45,6 +50,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Geração',  
         date: '2023-06-12' 
     },
@@ -53,6 +59,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Midia',   
         date: '2023-06-11'
     },
@@ -61,6 +68,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Geração',   
         date: '2023-06-04'
     },
@@ -69,6 +77,7 @@ export const videos= [
         nome:'09',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Midia',  
         date: '2023-01-29' 
     },
@@ -77,6 +86,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',   
         date: '2023-06-30'
     },
@@ -85,6 +95,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência', 
         date: '2023-06-30'  
     },
@@ -93,6 +104,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',  
         date: '2023-06-30' 
     },
@@ -101,6 +113,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -109,6 +122,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -117,6 +131,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -125,6 +140,7 @@ export const videos= [
         nome:'16',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -133,6 +149,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -141,6 +158,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -149,6 +167,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -157,6 +176,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -165,6 +185,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -173,6 +194,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -181,6 +203,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -189,6 +212,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -197,6 +221,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -205,6 +230,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -213,6 +239,7 @@ export const videos= [
         nome:'27',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -221,6 +248,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -229,6 +257,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -237,6 +266,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -245,6 +275,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -253,6 +284,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -261,6 +293,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -269,6 +302,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -277,6 +311,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -285,6 +320,7 @@ export const videos= [
         nome:'36',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -293,6 +329,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -301,6 +338,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -309,6 +347,7 @@ export const videos= [
         nome:'como aumentar sua Geração de leads feat. Traktor',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },
@@ -317,6 +356,7 @@ export const videos= [
         nome:'40',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-06-30'   
     },{
@@ -324,6 +364,7 @@ export const videos= [
         nome:'o ultimo da lista',
         url:'',
         thumb:'',
+        description:'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting',
         type:'Agência',
         date: '2023-01-01'   
     },
