@@ -37,3 +37,63 @@
 .section p{
     margin: 5px 0 0 2em;
 }
+.containerFooter{
+    text-align: center;
+}
+.sectionOne{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 4em;
+    background-color: rgb(222, 252, 255);
+    
+}
+.sectionOne .comparativo{
+    width: 500px;
+   
+}
+.conteudo{
+    width: 50%;
+   
+}
+.conteudo .titulo{
+    text-align: start;
+    border-bottom: 1px solid gray;
+    width: 80%;
+    padding: 1em;
+}
+.conteudo .titulo h1{
+    width: 80%;
+} 
+.Coteudoone{
+    display: flex;
+    margin-top: 1em;
+
+}
+.Coteudoone button{
+    height: 55px;
+    padding: 0 1em;
+    margin-right: 2em;
+    color: #ffF;
+    border:1px solid #1E90FF;
+    background-color: #1E90FF;
+    border-radius: 30px;
+}
+.Coteudoone img{
+    width: 150px;
+}
+.Coteudotwo{
+    display: flex;
+    margin-top:1em ;
+}
+.Coteudotwo img{
+    margin:0 0.5em;
+}
+.Coteudotwo p{
+    padding-right: 1em;
+    font-size: 12px;
+}
+.Coteudotwo .borda{
+    border-right: 1px solid gray;
+}
+

@@ -17,6 +17,31 @@ export default function Home() {
       </div>
     </div>
     <VideosContainer/>
+    <div className='containerFooter'> 
+        <div className='sectionOne'>
+            <img className='comparativo' src="../img/comparativo_img_CTA.png" alt="" />
+            <div className='conteudo'>
+                  <div className='titulo'>
+                  <h1>Pronto para triplica sua Geração de Leads?</h1>
+                  <p>Criação e ativação em 4 minutos</p>
+                  </div>
+                  <div className='Coteudoone'>
+                    <button>VER DEMOSTRAÇÃO</button>
+                    <img src="../img/selo_RD.png" alt="" />
+                  </div>
+                  <div className='Coteudotwo'>
+                    
+                    <img src="../img/no-card-dark.webp" alt="" />
+                    <p className='borda'>Não é necessario Cartão de Crédito</p>
+                    <img src="../img/rating.webp" alt="" />
+                    <p>4.9/5 media de satisfação</p>
+                  </div>
+            </div>
+        </div>
+        <div className='sectionTwo'>
+
+        </div>
+    </div>
     </>
   )
 }
