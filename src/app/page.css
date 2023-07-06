@@ -25,10 +25,10 @@
     font-weight: 700;
     color: #1E90FF;
 }
-.section img{
-    position: absolute;
-    top: 262px;
-    right: 390px;
+.section h1 img{
+    position: relative;
+        top: -30px;
+        right: 30px;
 }
 .section .borda{
     border: 0.1px solid gray;
@@ -43,7 +43,7 @@
 .sectionOne{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+   justify-content: center;
     padding: 4em;
     background-color: rgb(222, 252, 255);
     
@@ -97,3 +97,136 @@
     border-right: 1px solid gray;
 }
 
+.divisor{
+    margin-top: 3em;
+}
+.divisor p{
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+    
+}
+.Footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40vh;
+    margin-top: 1.5em;
+
+}
+.Footer .lista{
+    text-align: start;
+    margin: 1.5em;
+
+}
+.Footer .lista h3{
+    margin-bottom: 2.5em;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+}
+
+.Footer .lista p{
+    margin-bottom: 1.5em;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+}
+.Footer .lista img{
+    margin-right: .8em;
+    margin-bottom: 2.5em;
+}
+.Footer .lista p span{
+   
+    
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+@media(max-width:600px) {
+    
+    .section h2{
+        font-size: 25px;
+        font-weight: 500;
+    }
+    .section h1{
+        font-size:40px;
+        font-weight: 700;
+        color: #1E90FF;
+    }
+    .section h1 img{
+       display: none;
+    }
+    .section .borda{
+       display: none;
+    }
+    .section p{
+      margin: 0 auto;
+        width: 80%;
+    }
+    .sectionOne{
+        display: block;
+        padding: 0;
+    }
+    .sectionOne .comparativo{
+        width: 300px;
+    }
+    .conteudo{
+        width: auto;
+        padding: 1em;
+    }
+    .conteudo .titulo{
+        text-align: start;
+        border-bottom: 0px solid gray;
+        width: 100%;
+        padding: 0;
+    }
+    .conteudo .titulo h1{
+        width: 100%;
+
+    } 
+    .conteudo .titulo p{
+        margin-top: 0.8em;
+    }
+    .Coteudoone{
+        margin: 1.5em 1em;
+    }
+    .Coteudoone img{
+        width: 120px;
+    }
+    .Coteudoone button{
+        height: 40px;
+        padding: 0 1em;
+        
+        margin-right: 2em;
+        color: #ffF;
+        border:1px solid #1E90FF;
+        background-color: #1E90FF;
+        border-radius: 30px;
+    }
+    .Coteudotwo{
+        display: block;
+       
+    }
+    .Footer{
+         flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 1em;
+        height: auto;
+    }
+    .Footer .lista{
+        text-align: start;
+        margin: .5em;
+    
+    }
+    .Footer .lista h3 {
+        margin-bottom: 1.5em;
+    }
+    .Footer .lista img{
+        margin-right: 0.8em;
+        margin-bottom: 0;
+    }
+    .Footer .lista p {
+        width: 80%;
+        margin: 0;
+        font-size: 10px;
+    }
+    
+}
